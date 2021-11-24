@@ -8,23 +8,20 @@ const detector = new DeviceDetector();
 const prisma = new PrismaClient();
 const deviceService = new DeviceService(prisma);
 
-type Data = {
-  device: any;
-};
-
-export default function handler(
+export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse<Data>
+  res: NextApiResponse<Device>
 ) {
   const device = detector.parse(req.headers["user-agent"] || "");
   const createdDevice = await deviceService.create({
-    clientType: device.client.type,
-    clientName: device.client.name,
-    osName: device.os.name,
-    osVersion: device.os.version,
-    deviceTrype: device.device.type,
-    deviceBrand: device.device.brand,
-    data: device as Prisma.JsonObject,
+    userAgent: req.headers["user-agent"] || "",
+    clientType: device?.client?.type || "unknow",
+    clientName: device?.client?.name,
+    osName: device?.os?.name || "",
+    osVersion: device?.os?.version,
+    deviceTrype: device?.device?.type || "",
+    deviceBrand: device?.device?.brand,
+    data: { ...device } as Prisma.JsonObject,
   });
-  res.status(200).json({ device });
+  res.status(201).json(createdDevice);
 }
