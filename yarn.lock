@@ -234,6 +234,18 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@prisma/client@^3.5.0":
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/@prisma/client/-/client-3.5.0.tgz#bb0c9c10fd9912209f5bfd01c1683094d8fa9a2d"
+  integrity sha512-LuaaisknLe9CCfJ1Rtqe9b9knvPgEEcC77OMmWdo3fSanxl5oTDxcH3IIhpULQQlJfZvDcaEXuXNU4dsNF+q1w==
+  dependencies:
+    "@prisma/engines-version" "3.5.0-38.78a5df6def6943431f4c022e1428dbc3e833cf8e"
+
+"@prisma/engines-version@3.5.0-38.78a5df6def6943431f4c022e1428dbc3e833cf8e":
+  version "3.5.0-38.78a5df6def6943431f4c022e1428dbc3e833cf8e"
+  resolved "https://registry.yarnpkg.com/@prisma/engines-version/-/engines-version-3.5.0-38.78a5df6def6943431f4c022e1428dbc3e833cf8e.tgz#254fdb80ae6db397ee1e638d12561f35d058e340"
+  integrity sha512-X16YmBmj7Omso4ZbkNBe6gPYlNcnwZMUPtXsguCkn+KoMqm3DJD9M4X31gx0Gf13Q44dY3SKPJZUk44/XUj/WA==
+
 "@rushstack/eslint-patch@^1.0.6":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.1.0.tgz#7f698254aadf921e48dda8c0a6b304026b8a9323"
@@ -886,6 +898,11 @@ des.js@^1.0.0:
   dependencies:
     inherits "^2.0.1"
     minimalistic-assert "^1.0.0"
+
+device-detector-js@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/device-detector-js/-/device-detector-js-3.0.0.tgz#7a12f94ec84d7291866ee5fe74e8dc2e495e2b35"
+  integrity sha512-bmdq9JZano9y2uor1VT4/g0rfN29hVnU1q0g8sgxtMGF9/UBaEBEeN/o0K4sEy8LIga9yIdmyXSaa04ncUBsoQ==
 
 diffie-hellman@^5.0.0:
   version "5.0.3"
@@ -2300,6 +2317,11 @@ prelude-ls@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
+
+prisma-client@^0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/prisma-client/-/prisma-client-0.0.0.tgz#f735e787f12dbf0518cf2c49beb4c8a1a4f09d47"
+  integrity sha512-tbK0ZaUt4E9IkQalS+2V5dv45lTcwxWNSXenRNEgSuzTJWW3T6SUgBfuk0gUS5wC07eQNEOU6/SVomVL/hsaHw==
 
 process@0.11.10:
   version "0.11.10"
