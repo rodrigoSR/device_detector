@@ -13,6 +13,7 @@ datasource db {
 model Device {
   id Int @id @default(autoincrement())
   clientType String
+  userAgent String?
   clientName String?
   osName String
   osVersion String?
