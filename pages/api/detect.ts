@@ -21,16 +21,16 @@ export default async function handler(
   res: NextApiResponse<Device>
 ) {
   await cors(req, res);
-  const device = detector.parse(req.headers["user-agent"] || "");
+  // const device = detector.parse(req.headers["user-agent"] || "");
   const createdDevice = await deviceService.create({
-    userAgent: req.headers["user-agent"] || "",
-    clientType: device?.client?.type || "unknow",
-    clientName: device?.client?.name,
-    osName: device?.os?.name || "",
-    osVersion: device?.os?.version,
-    deviceTrype: device?.device?.type || "",
-    deviceBrand: device?.device?.brand,
-    data: { ...device } as Prisma.JsonObject,
+    userAgent: "",
+    clientType: "unknow",
+    clientName: "",
+    osName: "",
+    osVersion: "",
+    deviceTrype: "",
+    deviceBrand: "",
+    data: req.body as Prisma.JsonObject,
   });
   res.status(201).json(createdDevice);
 }

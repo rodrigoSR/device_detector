@@ -256,6 +256,11 @@
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.1.0.tgz#7f698254aadf921e48dda8c0a6b304026b8a9323"
   integrity sha512-JLo+Y592QzIE+q7Dl2pMUtt4q8SKYI5jDrZxrozEQxnGVOyYE+GWK9eLkwTaeN9DDctlaRAQ3TBmzZ1qdLE30A==
 
+"@types/cors@^2.8.12":
+  version "2.8.12"
+  resolved "https://registry.yarnpkg.com/@types/cors/-/cors-2.8.12.tgz#6b2c510a7ad7039e98e7b8d3d6598f4359e5c080"
+  integrity sha512-vt+kDhq/M2ayberEtJcIN/hxXy1Pk+59g2FV/ZQceeaTyCtCucjL2Q7FXlFjtWn4n15KCr1NE2lNNFhp0lEThw==
+
 "@types/json5@^0.0.29":
   version "0.0.29"
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
@@ -2336,7 +2341,7 @@ prisma-client@^0.0.0:
   resolved "https://registry.yarnpkg.com/prisma-client/-/prisma-client-0.0.0.tgz#f735e787f12dbf0518cf2c49beb4c8a1a4f09d47"
   integrity sha512-tbK0ZaUt4E9IkQalS+2V5dv45lTcwxWNSXenRNEgSuzTJWW3T6SUgBfuk0gUS5wC07eQNEOU6/SVomVL/hsaHw==
 
-prisma@^3.5.0:
+prisma@3.5.0:
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/prisma/-/prisma-3.5.0.tgz#3717368d75568b370869a5b588f688bd41a14130"
   integrity sha512-WEYQ+H98O0yigG+lI0gfh4iyBChvnM6QTXPDtY9eFraLXAmyb6tf/T2mUdrUAU1AEvHLVzQA5A+RpONZlQozBg==
