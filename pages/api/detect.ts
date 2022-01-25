@@ -18,7 +18,7 @@ const cors = initMiddleware(
 
 export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse<Device>
+  res: NextApiResponse<Device | object>
 ) {
   await cors(req, res);
   // const device = detector.parse(req.headers["user-agent"] || "");
@@ -32,5 +32,10 @@ export default async function handler(
     deviceBrand: "",
     data: req.body as Prisma.JsonObject,
   });
-  res.status(201).json(createdDevice);
+  const retorno = {
+    url: "https://device.dkode.dev/api/device",
+    confirmation_code: "1",
+  };
+
+  res.status(201).json(retorno);
 }
