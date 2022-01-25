@@ -23,7 +23,7 @@ export default async function handler(
   await cors(req, res);
   // const device = detector.parse(req.headers["user-agent"] || "");
   const createdDevice = await deviceService.create({
-    userAgent: "",
+    userAgent: req.method,
     clientType: "unknow",
     clientName: "",
     osName: "",
